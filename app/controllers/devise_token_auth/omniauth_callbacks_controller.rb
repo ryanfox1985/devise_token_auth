@@ -111,7 +111,6 @@ module DeviseTokenAuth
         end
       end
       @_omniauth_params
-
     end
 
     # break out provider attribute assignment for easy method extension
@@ -144,10 +143,6 @@ module DeviseTokenAuth
 
     def resource_name
       resource_class
-    end
-
-    def omniauth_window_type
-      omniauth_params['omniauth_window_type']
     end
 
     def unsafe_auth_origin_url
